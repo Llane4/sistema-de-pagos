@@ -113,8 +113,8 @@ export async function getServerSideProps() {
     ],
     external_reference: "00000001",
     back_urls: {
-      failure: "http://localhost:3000/thanks/failure",
-      success: "http://localhost:3000/thanks/success",
+      failure: `${process.env.NEXT_PUBLIC_BASE_URL}/thanks/failure`,
+      success: `${process.env.NEXT_PUBLIC_BASE_URL}/thanks/success`,
     },
     binary_mode: true,
   });
